@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/Ice_Eye_Company/",
     "preview": "vite preview"
   },
   "devDependencies": {
