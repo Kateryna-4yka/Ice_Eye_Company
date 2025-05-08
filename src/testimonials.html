@@ -68,52 +68,45 @@
     </header>
 
     <main>
-      <!---------------Hero Section ------------>
-      <section class="hero">
-        <h1 class="hero-title">Безпека та ІТ-рішення під ключ <br />від Ice Eye Company</h1>
-        <p class="hero-text">
-          Встановлення відеоспостереження,  <br />налаштування серверів,  <br />побудова локальних мереж для дому та бізнесу.  <br />Київ та область.
-        </p>
-        <button class="consultation-btn">Отримати консультацію</button>
-      </section>
 
-      <!-------------- Advantages -------------->
-      <section id="advantages" class="container advantages">
-        <div class="advantages-column">
-          <h3 class="advantages-title">Наші переваги</h3>
-          <ul class="advantages-list">
-            <li class="advantages-li">Більше 3 років досвіду. Ми реалізували десятки проєктів для бізнесу та приватних клієнтів.</li>
-            <li class="advantages-li">Сертифіковані спеціалісти. Наші фахівці проходять регулярне навчання та атестацію.</li>
-            <li class="advantages-li">Використання якісного обладнання. Працюємо лише з перевіреними брендами — Hikvision, TP-Link, Dahua.</li>
-            <li class="advantages-li">Швидкий виїзд на об'єкт. Ми приїжджаємо в день звернення або в зручний для вас час.</li>
-            <li class="advantages-li">Гнучке ціноутворення. Ми підбираємо рішення під будь-який бюджет.</li>
-            <li class="advantages-li">Безкоштовна консультація. Допомагаємо визначити потреби до початку робіт.</li>
-            <li class="advantages-li">Інтеграція з мобільними додатками. Налаштовуємо спостереження з телефона чи планшета.</li>
-            <li class="advantages-li">Можливість поетапної реалізації. Ви можете встановлювати обладнання частинами.</li>
-            <li class="advantages-li">Постійна техпідтримка. Зв’язок із нашими фахівцями — 24/7.</li>
-            <li class="advantages-li">Повна документація. Ви отримуєте інструкції та гарантії на всі етапи.</li>
-          </ul>
-        </div>
+      <!-------------- testimonials -------------->
+      <section class="testimonials" >
+        <div class="container">
+          <h2 class="testimonials-title">Залиште свій відгук</h2>
+          <p class="testimonials-text">
+            Нам важлива ваша думка.  <br />Поділіться своїми враженнями про нашу роботу.
+          </p>
 
-        <div class="advantages-column">
-          <h3 class="advantages-title">Чому обирають нас</h3>
-          <ul class="advantages-list">
-            <li class="advantages-li">Ми працюємо прозоро. Ви одразу знаєте вартість і строки реалізації проєкту.</li>
-            <li class="advantages-li">Кожен об’єкт — індивідуальний. Ми не нав’язуємо зайвих послуг, а шукаємо оптимальне рішення.</li>
-            <li class="advantages-li">Швидкість виконання. У більшості випадків система готова за 1–2 дні.</li>
-            <li class="advantages-li">Гарантія до 3 років. Ми відповідаємо за нашу роботу і за встановлене обладнання.</li>
-            <li class="advantages-li">Професійна технічна підтримка. Не залишаємо клієнта після встановлення — підтримуємо весь життєвий цикл.</li>
-            <li class="advantages-li">Працюємо по договору. Це гарантує юридичну відповідальність і вашу безпеку.</li>
-            <li class="advantages-li">Можливість дистанційної діагностики. Ми можемо підключитись до вашої системи й усунути несправності онлайн.</li>
-            <li class="advantages-li">Рекомендації від клієнтів. 70% нових звернень — за порадами від наших замовників.</li>
-            <li class="advantages-li">Зручний сервіс. Ви спілкуєтесь з нами будь-яким зручним способом — месенджери, пошта, телефон.</li>
-            <li class="advantages-li">Ми розмовляємо простою мовою. Пояснюємо технічні речі так, щоб було зрозуміло навіть тим, хто не в ІТ.</li>
-          </ul>
+          <form class="testimonial-form" id="testimonialForm">
+            <label class="form-label">
+              Ім’я
+              <input type="text" name="name" placeholder="Ваше ім’я" required class="form-input" />
+            </label>
+
+            <label class="form-label">
+              Номер телефону
+              <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" required class="form-input" />
+            </label>
+
+            <label class="form-label">
+              Відгук
+              <textarea name="message" placeholder="Напишіть ваш коментар..." required class="form-textarea"></textarea>
+            </label>
+
+            <button type="submit" class="form-button">Надіслати</button>
+          </form>
+
+          <div class="thank-you-message" style="display: none;">
+            <p>Дякуємо за ваш відгук! Ми дуже цінуємо вашу думку.</p>
+          </div>
+          <div class="testimonial-list" id="testimonialList">
+            <h3>Відгуки клієнтів</h3>
+            <!-- Сюди будуть додаватись нові -->
+          </div>
         </div>
       </section>
+    </main>
 
-
-</main>
       <footer id="footer" class="footer">
 
             <h3 class="footer-title">Контакти</h3>
@@ -135,7 +128,7 @@
               <li>
                 <a href="https://t.me/Menstack" target="_blank" rel="noopener noreferrer">
                   <svg class="footer-icon">
-                    <use href="./src/sprite.svg#icon-telegram"></use>
+                    <use href="./sprite.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -143,7 +136,7 @@
               <li>
                 <a href="https://vb.me/+380638126438" target="_blank" rel="noopener noreferrer">
                   <svg class="footer-icon">
-                    <use href="./src/sprite.svg#icon-viber"></use>
+                    <use href="./sprite.svg#icon-viber"></use>
                   </svg>
                 </a>
               </li>
@@ -151,7 +144,7 @@
               <li>
                 <a href="https://instagram.com/ice.eye.company" target="_blank" rel="noopener noreferrer">
                   <svg class="footer-icon instagram">
-                    <use href="./src/sprite.svg#icon-instagram"></use>
+                    <use href="./sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -159,7 +152,7 @@
               <li>
                 <a href="https://kabanchik.ua/ua/user/3514349" target="_blank" rel="noopener noreferrer">
                   <svg class="footer-icon kabanchik">
-                    <use href="./src/sprite.svg#icon-Kabanchikua"></use>
+                    <use href="./sprite.svg#icon-Kabanchikua"></use>
                   </svg>
                 </a>
               </li>
@@ -173,7 +166,7 @@
 
 <div class="icon-arrow">
   <svg class="icon-arrow-up">
-    <use href="./src/sprite.svg#icon-dobble-arrow"></use>
+    <use href="./sprite.svg#icon-dobble-arrow"></use>
   </svg>
 </div>
 
@@ -202,7 +195,7 @@
   <form class="order-now-form">
 
     <svg class="order-now-icon-x">
-      <use href="./src/sprite.svg#icon-x"></use>
+      <use href="./sprite.svg#icon-x"></use>
     </svg>
 
     <h2 class="order-now-title">Замовити консультацію</h2>
@@ -221,6 +214,7 @@
   </form>
 </div>
 
-  <script type="module" src="./main.js"></script>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
